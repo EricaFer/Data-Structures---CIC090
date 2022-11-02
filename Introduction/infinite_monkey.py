@@ -53,7 +53,7 @@ def generate_and_score():
     bestScore = 0
     count = 0
 
-    while score < 27:
+    while score < len(goalPhrase):
 
         randomPhrase = generate_phrase()
         score = calculate_score(randomPhrase)

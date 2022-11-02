@@ -39,7 +39,7 @@ def generate_and_score():
 
     randomPhrase = generate_random(lengthRandom=len(goalPhrase))
 
-    while score < 27:
+    while score < len(goalPhrase):
 
         for i,goalLetter in enumerate(goalPhrase):
             while randomPhrase[i] != goalLetter:
